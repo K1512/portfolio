@@ -285,6 +285,10 @@ img {
 			padding-bottom: 5rem;
 		}
 
+		nav {
+			height: 50vh;
+		}
+
 		.me{
 			margin-left: 20rem;
 			margin-right: 20rem;
