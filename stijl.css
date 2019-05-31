@@ -138,10 +138,11 @@ a {
 
 img.logo {
 	padding: none;
-	background-color: transparent;
+	background-color: black;
 	position: fixed;
-	left: -20rem;
-	width: 100vh;
+	top: 25vh;
+	left: 20vw;
+	width: 60vw;
 }
 
 div.blogo{
@@ -242,9 +243,9 @@ img {
 		}
 
 		img.logo {
-			left: 8rem;
-			top: 10rem;
-			width: 90vw;
+			top: 10vh;
+			left: 15vw;
+			width: 70vw;
 
 		}
 
@@ -320,7 +321,9 @@ img {
 		}
 
 		img.logo{
-			top: -20rem;
+			width: 50vw;
+			top: -5vh;
+			left: 25vw;
 		}
 
 	}
