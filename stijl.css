@@ -1,0 +1,327 @@
+
+
+/*INDEX*/
+h1 {
+	font-variant: small-caps;
+	color: white;
+}
+
+.light h1 {
+	color: black;
+}
+
+.menu {
+	position: fixed;
+	top: -3rem;
+	right: 3rem;
+}
+
+.menu img{
+	width: 5rem;
+}
+
+/*DARKMODE*/
+.darkmode{
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+}
+
+div a {
+	color: white;
+	text-decoration: none;
+	font-size: 2rem;
+	margin-right: 3rem;
+	padding: .3rem;
+}
+
+body.light {
+	background-color: white;
+}
+
+.light h1, .light p {
+	color: black;
+}
+
+.light div a:nth-child(2) {
+	background-color: black;
+	color: white;
+}
+
+div a:nth-child(1) {
+	background-color: #ffea00;
+	color: white;
+}
+
+.light div a:nth-child(1) {
+	background-color: white;
+	color: #363534;
+}
+
+.ik {
+	font-variant: small-caps;
+	font-size: 2.5rem;
+	position: absolute;
+	top: 20rem;
+	left: 3vw;
+}
+
+/*Menu*/
+nav {
+	background-color: white;
+	width: 100vw;
+	height: 40vh;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 5rem;
+	border-style: dashed;
+	border-color: black;
+	border-width: medium;
+}
+
+nav.onzichtbaar {
+	display: none;
+}
+
+nav a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 3rem;
+	font-weight: 600;
+}
+
+.light nav {
+	background-color: black;
+	border-color: white;
+}
+
+.light nav a {
+	color: white;
+}
+
+main {
+	column-count: 1; /* multi-column layout! */
+	/* https://www.smashingmagazine.com/2019/01/css-multiple-column-layout-multicol/ */
+}
+
+body {
+	padding: 5rem;
+	font-family: helvetica;
+	font-size: 1.65rem;
+	width: 90vw;
+	height: 100%;
+	background-color: black;
+}
+
+p {
+	color: white;
+	position: fixed;
+	top: 3rem;
+	left: 14rem;
+	text-align: center;
+	font-size: 5rem;
+	font-variant: small-caps;
+}
+
+.light p {
+	color: black;
+}
+
+a {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.logo {
+	padding: none;
+	background-color: transparent;
+	position: fixed;
+	left: -20rem;
+	width: 100vh;
+}
+
+div.blogo{
+	background-color: black;
+	width: 30rem;
+}
+
+img {
+	width: 40vh;
+	margin: 5rem 1rem 0rem auto;
+	background-color: #ffea00;
+	padding: 1rem;
+}
+
+
+.tien {
+	transform: rotate(90deg);
+	position: sticky;
+	top: 150rem;
+}
+
+
+/*ABOUT ME*/
+.aboutme{
+	padding: 5rem;
+}
+
+.me{
+	color: yellow;
+	font-variant: normal;
+	position: absolute;
+	top: 10rem;
+}
+
+/*CONTACT*/
+.form {
+	margin: 3rem auto 0rem auto;
+	color: yellow;
+	position: absolute;
+	top: 40rem;
+}
+
+.mail {
+	margin-top: 15rem;
+	margin-left: -8rem
+}
+
+.bericht {
+	margin-top: 25rem;
+	margin-left: -8rem;
+}
+
+.send {
+	margin-top: 2rem;
+	margin-left: 32rem;
+	background-color: yellow;
+	font-size: 1.5rem;
+}
+
+@supports (grid-area: auto) {
+	body {
+		max-width: none;
+	}
+
+	@media (min-width: 700px) {
+		.menu {
+			position: fixed;
+			top: -2rem;
+			right: 3rem;
+		}
+
+		nav {
+			width: 20vw;
+		}
+
+		h1 {
+			font-size: 4rem;
+			text-align: left;
+		}
+
+		main {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+			grid-gap: 1rem;
+		}
+
+		a {
+			margin: auto;
+		}
+
+		img {
+			width: 30vh;
+		}
+
+		img:nth-child(10){
+			width: 100%;
+		}
+
+		img.logo {
+			left: 8rem;
+			top: 10rem;
+			width: 90vw;
+
+		}
+
+		.mail {
+			top: 0rem;
+			left: 30rem
+		}
+
+		.bericht {
+			top: 0rem;
+			left: 23rem;
+		}
+
+		.send {
+			position: absolute;
+			top: -10rem;
+			left: 60rem;
+		}
+
+
+
+	}
+
+	@media (min-width: 1000px) {
+		body.contact {
+			background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+			height: 100vh;
+		}
+
+		body.contact.light  {
+			background: white;
+		}
+
+		body {
+			background-color: black;
+			padding-bottom: 5rem;
+		}
+
+		.me{
+			margin-left: 20rem;
+			margin-right: 20rem;
+			position: absolute;
+			top: 5rem;
+			left: 30vw;
+		}
+
+		.draaiknop {
+			animation-name: draaiing;
+			animation-duration: 3s;
+			transform-origin: 6% 94%;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes draaiing {
+			100% {
+				transform: rotate(45deg);
+			}
+		}
+
+		.mail {
+			top: 0rem;
+			left: 70rem
+		}
+
+		.bericht {
+			left: 63rem;
+		}
+
+		.send {
+			position: absolute;
+			top: -10rem;
+			left: 64rem;
+		}
+
+		img.logo{
+			top: -20rem;
+		}
+
+	}
+}
