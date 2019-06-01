@@ -1,4 +1,12 @@
+.home {
+	position: absolute;
+	top: 55vh;
+}
 
+a.logo img{
+	padding: none;
+	background-color: black;
+}
 
 /*INDEX*/
 h1 {
@@ -58,14 +66,6 @@ div a:nth-child(1) {
 	color: #363534;
 }
 
-.ik {
-	font-variant: small-caps;
-	font-size: 2.5rem;
-	position: absolute;
-	top: 20rem;
-	left: 3vw;
-}
-
 /*Menu*/
 nav {
 	background-color: white;
@@ -117,37 +117,9 @@ body {
 	background-color: black;
 }
 
-p {
-	color: white;
-	position: fixed;
-	top: 3rem;
-	left: 14rem;
-	text-align: center;
-	font-size: 5rem;
-	font-variant: small-caps;
-}
-
-.light p {
-	color: black;
-}
-
 a {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-img.logo {
-	padding: none;
-	background-color: black;
-	position: fixed;
-	top: 25vh;
-	left: 20vw;
-	width: 60vw;
-}
-
-div.blogo{
-	background-color: black;
-	width: 30rem;
 }
 
 img {
@@ -174,7 +146,48 @@ img {
 	color: yellow;
 	font-variant: normal;
 	position: absolute;
-	top: 10rem;
+	top: 10vh;
+}
+
+.ik {
+	font-variant: small-caps;
+	font-size: 2.5rem;
+	position: absolute;
+	top: 60rem;
+	left: 7vw;
+	width: 40rem;
+}
+
+.fotoik {
+	transform: rotate(90deg);
+	position: absolute;
+	top: 20vh;
+	left: 14vw;
+}
+
+p {
+	color: white;
+	position: relative;
+	top: 3rem;
+	left: 14rem;
+	font-size: 5rem;
+	font-variant: small-caps;
+	padding-left: 2rem;
+}
+
+.light p {
+	color: black;
+}
+
+ul {
+	position: absolute;
+	top: 75rem;
+	color: white;
+	left: 5rem;
+}
+
+.light ul {
+	color: black;
 }
 
 /*CONTACT*/
@@ -229,6 +242,9 @@ img {
 			grid-template-columns: 1fr 1fr 1fr;
 			grid-template-rows: 1fr 1fr 1fr 1fr;
 			grid-gap: 1rem;
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		a {
@@ -243,11 +259,12 @@ img {
 			width: 100%;
 		}
 
-		img.logo {
-			top: 10vh;
-			left: 15vw;
+		a.logo img{
 			width: 70vw;
+		}
 
+		.logo {
+			grid-column: 1/4;
 		}
 
 		.mail {
@@ -271,6 +288,10 @@ img {
 	}
 
 	@media (min-width: 1000px) {
+		main {
+			width: 1500px;
+		}
+
 		body.contact {
 			background: linear-gradient(to bottom, #8e2de2, #4a00e0);
 			height: 100vh;
@@ -325,10 +346,12 @@ img {
 			left: 64rem;
 		}
 
-		img.logo{
+		a.logo img{
 			width: 50vw;
-			top: -5vh;
-			left: 25vw;
+		}
+
+		.logo {
+			grid-column: 1/4;
 		}
 
 	}
