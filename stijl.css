@@ -307,7 +307,7 @@ ul {
 		}
 
 		nav {
-			height: 50vh;
+			height: 40rem;
 		}
 
 		.me{
@@ -321,7 +321,7 @@ ul {
 		.draaiknop {
 			animation-name: draaiing;
 			animation-duration: 3s;
-			transform-origin: 10% 74%;
+			transform-origin: 5% 82%;
 			animation-fill-mode: forwards;
 		}
 
