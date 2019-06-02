@@ -213,7 +213,7 @@ label.ber {
 .form {
 	margin: 3rem auto 0rem auto;
 	color: yellow;
-	position: absolute;
+	position: fixed;
 	top: 40rem;
 }
 
@@ -320,15 +320,6 @@ label.ber {
 			width: 1500px;
 		}
 
-		body.contact {
-			background: linear-gradient(to bottom, #8e2de2, #4a00e0);
-			height: 900px;
-		}
-
-		body.contact.light  {
-			background: white;
-		}
-
 		body {
 			background-color: black;
 			padding-bottom: 5rem;
@@ -348,14 +339,20 @@ label.ber {
 
 		.ik {
 			position: absolute;
-			left: 50rem;
+			left: 70rem;
 			top: 20rem;
+		}
+
+		.fotoik {
+			width: 50rem;
 		}
 
 		ul {
 			position: absolute;
-			left: 100rem;
-			top: 20rem;
+			left: 85rem;
+			top: 50rem;
+			padding: 3rem;
+			border: 3px solid yellow;
 		}
 
 		.draaiknop {
@@ -369,7 +366,7 @@ label.ber {
 				transform: translate(0rem);
 			}
 			100% {
-			transform: translate(-40vw);
+			transform: translate(-16vw);
 			}
 		}
 
@@ -387,6 +384,15 @@ label.ber {
 			position: absolute;
 			top: 12rem;
 			left: 16rem;
+		}
+
+		body.contact {
+			background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+			height: 900px;
+		}
+
+		body.contact.light  {
+			background: white;
 		}
 
 		a.logo img{
