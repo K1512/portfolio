@@ -339,20 +339,20 @@ label.ber {
 
 		.ik {
 			position: absolute;
-			left: 70rem;
-			top: 20rem;
+			left: 65rem;
+			top: 16rem;
 		}
 
 		.fotoik {
-			width: 50rem;
+			width: 40rem;
 		}
 
 		ul {
 			position: absolute;
-			left: 85rem;
-			top: 50rem;
+			left: 65rem;
+			top: 45rem;
 			padding: 3rem;
-			border: 3px solid yellow;
+
 		}
 
 		.draaiknop {
