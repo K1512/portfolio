@@ -48,7 +48,11 @@ div a {
 }
 
 body.light {
-	background-color: white;
+		background-image: linear-gradient(180deg, #ffcccc, #ffdf9e, #fdfd96, #cff0cc, #99cccc, #b19cd9);
+}
+
+.light img.loogo {
+	background-image: linear-gradient(180deg, #ffcccc -30%, #ffdf9e 180%);
 }
 
 .light h1, .light p {
@@ -118,8 +122,18 @@ body {
 	font-size: 1.65rem;
 	width: 90vw;
 	height: 100%;
-	background-color: black;
+	background-image: linear-gradient(180deg, red, orange, yellow, green, blue, violet);
 }
+
+img.loogo {
+		background-image: linear-gradient(180deg, red -30%, orange 180%);
+}
+
+body.contact {
+	background-repeat: no-repeat;
+	height: 900px;
+}
+
 
 a {
 	text-decoration: none;
@@ -214,7 +228,7 @@ label.ber {
 	margin: 3rem auto 0rem auto;
 	color: yellow;
 	position: fixed;
-	top: 40rem;
+	top: 20rem;
 }
 
 .mail {
@@ -313,12 +327,7 @@ label.ber {
 		}
 
 		.light img.loogo {
-			background-image: linear-gradient(135deg, #ffcccc -2%, #ffdf9e 30%, #fdfd96);
-		}
-
-
-		.light img {
-			background-image: linear-gradient(135deg, lightgrey, purple);
+			background-image: linear-gradient(135deg, #ffcccc -30%, #ffdf9e 30%, #fdfd96 93%, #cff0cc 150%);
 		}
 
 		main {
@@ -326,7 +335,7 @@ label.ber {
 		}
 
 		body {
-			background-color: black;
+			background-image: linear-gradient(135deg, violet, indigo, blue, yellow, orange, red);
 			padding-bottom: 5rem;
 		}
 
@@ -339,6 +348,11 @@ label.ber {
 				height: 900px;
 				overflow: hidden;
 		}
+
+		img.loogo {
+				background-image: linear-gradient(135deg, violet -30%, indigo 30%, blue 93%, yellow 150%);
+		}
+
 
 		nav {
 			height: 45rem;
@@ -385,6 +399,10 @@ label.ber {
 			}
 		}
 
+		.form {
+			top: 40rem;
+		}
+
 		.mail {
 			top: -10rem;
 			left: 30rem
@@ -399,15 +417,6 @@ label.ber {
 			position: absolute;
 			top: 12rem;
 			left: 16rem;
-		}
-
-		body.contact {
-			background: linear-gradient(to bottom, #8e2de2, #4a00e0);
-			height: 900px;
-		}
-
-		body.contact.light  {
-			background: white;
 		}
 
 		a.logo img{
