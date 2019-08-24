@@ -312,8 +312,13 @@ label.ber {
 			background-color: white;
 		}
 
+		.light img.loogo {
+			background-image: linear-gradient(135deg, #ffcccc -2%, #ffdf9e 30%, #fdfd96);
+		}
+
+
 		.light img {
-			background-color: darkgrey;
+			background-image: linear-gradient(135deg, lightgrey, purple);
 		}
 
 		main {
@@ -323,6 +328,16 @@ label.ber {
 		body {
 			background-color: black;
 			padding-bottom: 5rem;
+		}
+
+		body.light {
+			background-image: linear-gradient(135deg, #ffcccc, #ffdf9e, #fdfd96, #cff0cc, #99cccc, #b19cd9);
+			background-repeat: no-repeat;
+		}
+
+		body.mijnpagina {
+				height: 900px;
+				overflow: hidden;
 		}
 
 		nav {
@@ -403,5 +418,6 @@ label.ber {
 			grid-column: 1/4;
 		}
 
+		}
 	}
 }
