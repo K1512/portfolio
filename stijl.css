@@ -317,7 +317,9 @@ label.ber {
 			left: 16rem;
 		}
 
-
+		.light img {
+			background-image: linear-gradient(135deg, lightgrey, purple);
+		}
 
 	}
 
